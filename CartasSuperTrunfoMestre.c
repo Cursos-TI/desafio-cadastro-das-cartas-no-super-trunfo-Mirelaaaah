@@ -162,19 +162,19 @@ int main() {
         printf("As cartas têm a mesma quantidade de Pontos Turisticos! \n");
     }
 
-    if (Densidade_populacional[0] > Densidade_populacional[1]) {
+    // Na Densidade populacional o menor valor é que é o vencedor.
+
+    if (Densidade_populacional[0] < Densidade_populacional[1]) {
         printf("Densidade populacional: Carta 1 venceu! \n");
-    } else if (Densidade_populacional[0] < Densidade_populacional[1]) {
+    } else if (Densidade_populacional[0] > Densidade_populacional[1]) {
         printf("Densidade populacional: Carta 2 venceu! \n");
     } else {
         printf("As cartas têm a mesma Densidade Populacional! \n");
     }
 
-    // No PIB per Capita o menor valor é que é o vencedor.
-
-    if (PIB_per_Capita[0] < PIB_per_Capita[1]) {
+    if (PIB_per_Capita[0] > PIB_per_Capita[1]) {
         printf("PIB per capita: Carta 1 venceu! \n");
-    } else if (PIB_per_Capita[0] > PIB_per_Capita[1]) {
+    } else if (PIB_per_Capita[0] < PIB_per_Capita[1]) {
         printf("PIB per capita: Carta 2 venceu! \n");
     } else {
         printf("As cartas têm o mesmo PIB per Capita! \n");
